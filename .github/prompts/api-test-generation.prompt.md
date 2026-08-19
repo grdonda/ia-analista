@@ -12,7 +12,7 @@ Analise a funcionalidade ou endpoint e gere um plano de teste prático.
 
 1. Verificar se existe endpoint, controller, DTO ou contrato de entrada.
 2. Identificar método HTTP, path, headers, query, path params e body.
-3. Se o projeto já tiver Swagger/OpenAPI, orientar a rodar o serviço e validar diretamente no ambiente de homologação ou local.
+3. Se o projeto já tiver Swagger/OpenAPI, informar que o serviço pode ser executado e validado diretamente por ele quando o usuário solicitar.
 4. Se não houver Swagger ou se a análise exigir mais clareza, gerar curl de exemplo com payload realista.
 5. Explicar rapidamente o que a chamada faz e quais impactos a entrada pode causar.
 
@@ -49,4 +49,5 @@ curl -X ...
 - se a API já estiver documentada em Swagger, preferir orientação para uso do endpoint documentado
 - priorizar exemplos executáveis e práticos
 - quando houver integração externa, indicar risco e impacto
+- não executar o curl, iniciar o serviço ou acessar o Swagger sem pedido explícito
 - responder em formato curto, técnico e útil para QA, testes manuais e code review

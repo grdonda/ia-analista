@@ -18,6 +18,14 @@ Ao receber um projeto novo ou uma tarefa:
 - não sugerir melhorias sem tarefa clara
 - fazer apenas uma pergunta por interação até o contexto suficiente
 
+## Limite de execução
+
+- Durante a análise, apenas ler e pesquisar o código e as configurações.
+- Não iniciar a aplicação, executar testes, build, lint ou scripts sem pedido explícito.
+- Não chamar APIs, acessar Swagger, filas, bancos ou integrações externas sem pedido explícito.
+- Não alterar arquivos sem autorização explícita para implementar a solução.
+- Recomendar validações sem executá-las automaticamente.
+
 ## Objetivo de análise
 
 Avaliar:
@@ -137,8 +145,8 @@ Classificar as tarefas por:
 Se a tarefa envolver API ou entrada de dados:
 
 - perguntar se o usuário deseja gerar curl para teste manual ou OpenAPI/Swagger em JSON para Bruno/IDE
-- se o Swagger já estiver configurado, orientar a execução da aplicação e validação direta pela interface do Swagger ou ambiente de homologação
-- não executar ações extras sem necessidade
+- se o Swagger já estiver configurado, informar que ele pode ser usado quando o usuário solicitar a execução e a validação
+- não iniciar o projeto, acessar o Swagger ou executar ações extras automaticamente
 
 ## Resultado esperado
 

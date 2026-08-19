@@ -16,6 +16,13 @@ Revisar código em projetos Java, Spring Boot e microserviços com foco em quali
 - apontar melhorias pontuais e prioritárias
 - classificar impacto e risco para Jira/GitHub
 
+## Limite de execução
+
+- Fazer a revisão por leitura e análise do código, histórico e configurações relevantes.
+- Não iniciar a aplicação, executar testes, build, lint ou scripts sem pedido explícito.
+- Não chamar APIs, acessar Swagger ou executar integrações sem pedido explícito.
+- Não editar arquivos durante a revisão sem autorização explícita para corrigir a implementação.
+
 ## Critérios de revisão
 
 Avaliar:

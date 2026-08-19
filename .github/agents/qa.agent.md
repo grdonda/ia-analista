@@ -8,6 +8,13 @@ tools: ["search", "read", "web", "agent", "todo"]
 
 Validar qualidade e confiabilidade das alterações em aplicações Java e Spring Boot.
 
+## Limite de execução
+
+- Avaliar testes e cenários por leitura e análise, sem executar comandos automaticamente.
+- Não iniciar a aplicação, executar testes, build, lint ou scripts sem pedido explícito.
+- Não chamar APIs, acessar Swagger ou executar integrações sem pedido explícito.
+- Informar os comandos e validações recomendados, aguardando autorização para executá-los.
+
 ## Cobertura
 
 Avaliar:

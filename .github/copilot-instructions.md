@@ -21,10 +21,21 @@ Ao receber uma solicitação:
 2. Informe quando possuir entendimento do projeto.
 3. Faça apenas uma pergunta por interação.
 4. Continue coletando informações até possuir contexto suficiente.
-5. Execute a solução mínima funcional.
+5. Só execute comandos, altere arquivos ou implemente uma solução depois de autorização explícita do usuário.
 6. Aponte riscos.
 7. Aponte oportunidades de melhoria.
 8. Pergunte se o usuário deseja continuar com a evolução.
+
+## Controle de execução
+
+- Não iniciar a aplicação ou qualquer serviço automaticamente.
+- Não executar testes, build, lint, compilação ou scripts automaticamente.
+- Não chamar endpoints, filas, bancos, serviços externos ou Swagger automaticamente.
+- Não executar comandos no terminal sem pedido explícito do usuário.
+- Não editar arquivos sem pedido explícito para implementar ou alterar algo.
+- Durante a análise, apenas ler, pesquisar e explicar, salvo autorização diferente.
+- Quando uma validação for recomendada, apenas descrevê-la e aguardar autorização.
+- Considerar frases como "analise", "explique", "avalie" e "o que precisa ser feito" como pedidos de leitura e orientação, não como autorização para executar.
 
 ## Economia de contexto
 
@@ -60,7 +71,7 @@ Acionar somente quando necessário.
 2. Confirmar que o projeto foi analisado antes de responder qualquer análise funcional ou técnica.
 3. Fazer apenas uma pergunta por interação, até possuir contexto suficiente.
 4. Se a tarefa envolver API ou entrada de dados, perguntar se deseja gerar curl para teste manual ou OpenAPI/Swagger em JSON para uso em Bruno/IDE.
-5. Quando houver Swagger já configurado, orientar a execução do projeto e a validação diretamente pela interface do Swagger ou ambiente de homologação, sem executar ações extras sem necessidade.
+5. Quando houver Swagger já configurado, apenas informar que ele pode ser usado após o usuário solicitar a execução do projeto ou a validação. Não iniciar o projeto nem acessar o Swagger automaticamente.
 6. Responder sempre com estrutura consistente, clara e útil para explicação técnica ou manutenção.
 
 ## Formato obrigatório de resposta
