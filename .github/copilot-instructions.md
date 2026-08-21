@@ -62,6 +62,20 @@ Antes de analisar código Java:
 - DONDA - Analista de Sistemas
 - DONDA - QA Engineer
 - DONDA - Code Review
+- DONDA - TechLead
+
+## Fluxo de histórias
+
+- O TechLead é a porta de entrada para análise e refinamento de histórias.
+- A história deve ser localizada em `<dominio>/historias/<id>.md` antes de qualquer análise de código.
+- História inexistente ou vazia encerra a análise imediatamente.
+- História incompleta deve gerar fatos, impactos e esclarecimentos necessários, sem inventar requisitos.
+- História completa deve ser confirmada de forma breve e aguardar o pedido de prosseguimento.
+- No prosseguimento, gerar tarefas técnicas vinculadas à história e cenários `CT001`, `CT002` em sequência para cada comportamento aplicável.
+- `TP`, `TE` e `TS` são referências de organização dos testes, não arquivos gerados.
+- Palavras-chave Gherkin ficam em inglês e maiúsculas; o texto descritivo fica em português normal.
+- Tarefas devem incluir critérios de aceite, DoR, DoD, dependências, testes, observabilidade e estimativa com margem.
+- Informar em uma linha quando outro agente for acionado e acionar somente o especialista necessário.
 
 Acionar somente quando necessário.
 
